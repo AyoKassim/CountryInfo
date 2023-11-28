@@ -4,7 +4,7 @@ const nextConfig = {}
 //module.exports = nextConfig
 
 module.exports = {
-    basePath: '/github-pages',
+    basePath: '/CountryInfo',
     images: {
       remotePatterns: [
         {
