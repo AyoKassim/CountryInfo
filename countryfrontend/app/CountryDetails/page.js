@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 import { useRouter } from 'next/navigation';
 import { us, useEffect } from 'react';
 import axios from 'axios';
-import countryfacts from './countryfacts';
 import useSWR from 'swr';
 import Link from 'next/link';
 import Image from 'next/image';
