@@ -18,6 +18,7 @@ function CountryDetails(){
     const { data, error } = useSWR('details', LoadData)
 
     if (error){
+        console.log(error);
         return(
             <>
             <div>
