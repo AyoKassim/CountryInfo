@@ -9,7 +9,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const LoadData = async () => {
-    const countryResponse = await axios.get("http://localhost:9000/countryinfo");
+    const countryResponse = await axios.get("http://country-info-1re6xd25a-kas-projects-8e5ea42c.vercel.app/countryinfo");
     console.log(countryResponse);
     return countryResponse;
 }
