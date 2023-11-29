@@ -18,6 +18,7 @@ require('./routes')(app);
 
 app.get('/', (req, res) => {
     res.send('Port whatever');
+    res.json("Work");
 })
 
 app.listen(port, (err) => {
