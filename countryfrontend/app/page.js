@@ -15,7 +15,7 @@ export default function Page() {
   const [message, setMessage] = useState("Loading")
 
   useEffect(() => {
-    axios.get("http:/country-info-1re6xd25a-kas-projects-8e5ea42c.vercel.app/country")
+    axios.get("https:/country-info-1re6xd25a-kas-projects-8e5ea42c.vercel.app/country")
     .then(
       response => response.data
     )
@@ -49,7 +49,7 @@ export default function Page() {
     e.preventDefault();
 
   
-    await axios.post('http://country-info-1re6xd25a-kas-projects-8e5ea42c.vercel.app/country', {country})
+    await axios.post('https://country-info-1re6xd25a-kas-projects-8e5ea42c.vercel.app/country', {country})
     .then(response => console.log('Posting: ', response.data))
     .catch(err => console.log(err))
 
@@ -62,7 +62,7 @@ export default function Page() {
   const submitCountry = async (e) => {
     e.preventDefault();
     
-    await axios.post('http://country-info-1re6xd25a-kas-projects-8e5ea42c.vercel.app/country', {country})
+    await axios.post('https://country-info-1re6xd25a-kas-projects-8e5ea42c.vercel.app/country', {country})
     .then(response => console.log('Posting: ', response.data))
     .catch(err => console.log(err))
 
