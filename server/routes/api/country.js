@@ -4,6 +4,7 @@ module.exports = (app) => {
     let country;
 
     app.post('/country', (req, res) => {
+        res.setHeader("Access-Control-Allow-Origin", "*");
         country = req.body.country;
         if (country == "america"){
             country = "united states"
@@ -12,11 +13,13 @@ module.exports = (app) => {
     })
 
     app.get('/country', (req, res) => {
+        res.setHeader("Access-Control-Allow-Origin", "*");
         //country = req.body;
         res.json({message: "Backend is up!!" + country})
     })
 
     app.get('/countryinfo', (req, res) => {
+        res.setHeader("Access-Control-Allow-Origin", "*");
         const baseUrl = 'https://restcountries.com/v3.1/name/';
         //country = "ireland";
         const fullText = "?fullText=true"
