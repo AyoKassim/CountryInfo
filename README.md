@@ -3,6 +3,7 @@ React project developed with Nextjs, with an Express backend
 
 
 ## Steps to Install and Run
+(The build branch is the safest branch to use locally due to changes made in the main branch)
 
 In your terminal of choice, create a folder and cd into that folder
 
