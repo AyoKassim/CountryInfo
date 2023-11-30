@@ -12,7 +12,7 @@ module.exports = (app) => {
     })
 
     app.get('/country', (req, res) => {
-        country = req.body;
+        //country = req.body;
         res.json({message: "Backend is up!!" + country})
     })
 
