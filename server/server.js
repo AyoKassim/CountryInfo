@@ -18,9 +18,7 @@ app.use(bodyParser.json());
 
 require('./routes')(app);
 
-app.get('/', (req, res) => {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    
+app.get('/', (req, res) => {   
     res.send('Port whatever');
     
     res.json("Work");
