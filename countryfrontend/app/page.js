@@ -13,6 +13,7 @@ export default function Page() {
   const router = useRouter();
   const [country, setCountry] = useState('');
   const [message, setMessage] = useState("Loading")
+  header('Access-Control-Allow-Origin: *')
   axios.defaults.withCredentials = true;
   useEffect(() => {
     axios.get("https://country-info-rosy.vercel.app/country")
