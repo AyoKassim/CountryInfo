@@ -15,7 +15,7 @@ export default function Page() {
   const [message, setMessage] = useState("Loading")
 
   useEffect(() => {
-    axios.get("https:/country-info-rosy.vercel.app/country")
+    axios.get("https://country-info-rosy.vercel.app/country")
     .then(
       response => response.data
     )
