@@ -10,10 +10,12 @@ import World from "../public/World.png";
 const fetch = require('node-fetch');
 
 export default function Page() {
+  let headers = new Headers()
   const router = useRouter();
   const [country, setCountry] = useState('');
   const [message, setMessage] = useState("Loading")
-  header('Access-Control-Allow-Origin: *')
+  //header('Access-Control-Allow-Origin: *')
+  headers.append('Origin','https://country-info-app-nine.vercel.app/CountryInfo')
   axios.defaults.withCredentials = true;
   useEffect(() => {
     axios.get("https://country-info-rosy.vercel.app/country")
