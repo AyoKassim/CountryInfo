@@ -9,7 +9,7 @@ header('Access-Control-Allow-Origin: *')
 app.use(express.urlencoded({ extended: true}));
 app.use(cors(
     //origin: ["https://country-info-app-git-main-kas-projects-8e5ea42c.vercel.app/CountryInfo"],
-    origin: ["https://country-info-app-nine.vercel.app"],
+    origin: ["https://country-info-app-nine.vercel.app", "https://country-info-app-git-main-kas-projects-8e5ea42c.vercel.app/CountryInfo"],
     //origin: true,
     methods: ["POST", "GET"],
     credentials: true
