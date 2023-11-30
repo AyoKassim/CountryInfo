@@ -9,6 +9,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const LoadData = async () => {
+    axios.defaults.withCredentials = true;
     const countryResponse = await axios.get("https://country-info-rosy.vercel.app/countryinfo");
     console.log(countryResponse);
     return countryResponse;
