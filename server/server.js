@@ -6,7 +6,8 @@ const port = 9000;
 
 app.use(express.urlencoded({ extended: true}));
 app.use(cors(
-    origin: ["https://country-info-oid4me4gm-kas-projects-8e5ea42c.vercel.app//"],
+    //origin: ["https://country-info-oid4me4gm-kas-projects-8e5ea42c.vercel.app//"],
+    origin: true,
     methods: ["POST", "GET"],
     credentials: true
 ))
