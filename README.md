@@ -7,7 +7,7 @@ React project developed with Nextjs, with an Express backend
 
 In your terminal of choice, create a folder and cd into that folder
 
-Downnload zip file, and extracr files into the created folder
+Downnload zip file, and extract files into the created folder
 
 Using the terminal, cd into countryfrontend and run npm install to install dependencies
 
